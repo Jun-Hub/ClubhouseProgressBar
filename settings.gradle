@@ -1,0 +1,3 @@
+include ':ChProgressBar'
+include ':app'
+rootProject.name = "ClubhouseProgressBar"
