@@ -174,6 +174,7 @@ class ChProgressBar(context: Context, attrs: AttributeSet): View(context, attrs)
 
     fun setDotRadius(radius: Float) {
         this.dotRadius = radius
+        refreshDots()
     }
 
     fun setDotInterval(interval: Float) {
