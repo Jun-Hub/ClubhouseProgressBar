@@ -54,8 +54,8 @@ class ChProgressBar(context: Context, attrs: AttributeSet): View(context, attrs)
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
 
-        val desiredWidth = 500
-        val desiredHeight = 150
+        val desiredHeight = (dotRadius*2).toInt()
+        val desiredWidth = (desiredHeight*dotCount + dotInterval*(dotCount-1)).toInt()
 
         val widthMode = MeasureSpec.getMode(widthMeasureSpec)
         val widthSize = MeasureSpec.getSize(widthMeasureSpec)
