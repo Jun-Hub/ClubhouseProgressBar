@@ -60,7 +60,7 @@ Detail Usage
 ```
 </br>
 
-Set option programmatically also.
+You can set option programmatically also.
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
